@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RandomRandomYEah</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="container">
+    <h1>THE PERSON Aldrich LOVE</h1>
+<script>
+function checkWord() {
+    var userInput = document.getElementById("word").value.toLowerCase(); 
+    var output = document.getElementById("output");
+
+    if (userInput === "jasmine") {
+        output.innerHTML = "YEAH I LOVE HERR<333!!! JASMINE";
+        output.className = "correct";
+    } else if (userInput === "jazz") {
+        output.innerHTML = "YEAH I LOVE HERR<333!!! JAZZ";
+        output.className = "correct";
+    } else {
+        output.innerHTML = "NAH UH!";
+        output.className = "wrong";
+    }
+}
+</script>
+
+</head>
+<body>
+    <label for="word">First Name:3 all lowercase</label>
+    <input type="text" id="word" name="word">
+    <button onclick="checkWord()">Check</button>
+    <div id="output"></div>
+</div>
+</body>
+</html>
